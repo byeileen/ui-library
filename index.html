@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI Library</title>
+  <style>
+    body{ font-size: 1.5em; }
+    .container{ margin: 40px; margin-top: 60px;}
+    button{
+      width:200px;
+      background: #eee;
+      padding: 10px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Character stats page</h1>
+    <!-- tooltip -->
+    <p>Welcome to the charac ter stats page for <span class="tooltip" data-message="Go down the page for more information!">Hochime characters</span>!</p>
+    <h2>About</h2>
+    <!--dropdowns-->
+    <div class="dropdown">
+      <div class="trigger">The characters</div>
+      <div class="content">
+        <p>The current information can be updated on each character.</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="trigger">Naviating</div>
+      <div class="content">
+        <p>Switch between characters by taping the character tabs.</p>
+      </div>
+    </div>
+    <h2>Character information</h2>
+    <!--tabs-->
+    <div class="tabs">
+      <ul>
+        <li class="trigger active" data-target="#about">1. character</li>
+        <li class="trigger" data-target="#delivery">2. character</li>
+        <li class="trigger" data-target="#returns">3. character</li>
+      </ul>
+      <div id="about" class="content active">
+        <h3>Lily</h3>
+        <img src="img/option1.png" height="400px;" alt="">
+        <p><strong>Name:</strong> Lily</p>
+        <p><strong>Age:</strong> 25</p>
+        <p><strong>Weakness:</strong> water</p>
+        <p><strong>Living area:</strong> country side</p>
+      </div>
+      <div id="delivery" class="content">
+        <h3>Bruce</h3>
+        <p><img src="img/option2.png" height="400px;" alt="">
+          <p><strong>Name:</strong> Bruce</p>
+          <p><strong>Age:</strong> 101</p>
+          <p><strong>Weakness:</strong> sunlight</p>
+          <p><strong>Living area:</strong> mountain side</p></p>
+      </div>
+      <div id="returns" class="content">
+        <h3>???</h3>
+        <img src="img/option3.png" height="400px;" alt="">
+        <p><strong>Name:</strong>??</p>
+        <p><strong>Age:</strong> ??</p>
+        <p><strong>Weakness:</strong> ??</p>
+        <p><strong>Living area:</strong> ??</p>
+      </div>
+    </div>
+    <div>
+      <button class="snackbar-trigger">Info</button>
+    </div>
+  </div>
+    
+
+  <script src="assets/bundle.js"></script>
+</body>
+</html>
